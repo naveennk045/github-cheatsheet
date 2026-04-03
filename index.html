@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GitHub Cheatsheet — Industry Standard</title>
+
+  <!-- 💀 FAVICON -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💀</text></svg>" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -49,7 +52,6 @@
       min-height: 100vh;
     }
 
-    /* ── SCANLINE BACKGROUND ── */
     body::before {
       content: '';
       position: fixed;
@@ -67,7 +69,6 @@
 
     .page { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding: 0 24px 80px; }
 
-    /* ── HEADER ── */
     .hero {
       padding: 64px 0 48px;
       border-bottom: 1px solid var(--border);
@@ -127,7 +128,6 @@
     .pill.red    { color: var(--red);    background: var(--red-bg);    border-color: rgba(248,81,73,.3); }
     .pill.teal   { color: var(--teal);   background: var(--teal-bg);   border-color: rgba(57,208,200,.3); }
 
-    /* ── WORKFLOW BANNER ── */
     .workflow {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -171,7 +171,6 @@
       gap: 8px;
     }
 
-    /* ── SECTION TITLE ── */
     .section-title {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
@@ -181,7 +180,6 @@
       margin-bottom: 20px;
     }
 
-    /* ── GRID ── */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
@@ -189,7 +187,6 @@
       margin-bottom: 48px;
     }
 
-    /* ── CARD ── */
     .card {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -246,7 +243,6 @@
       color: var(--dim);
     }
 
-    /* ── COMMAND ROW ── */
     .cmd {
       display: flex;
       align-items: baseline;
@@ -284,7 +280,6 @@
       line-height: 1.4;
     }
 
-    /* ── COPY TOAST ── */
     #toast {
       position: fixed;
       bottom: 32px;
@@ -307,7 +302,6 @@
       opacity: 1;
     }
 
-    /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
       padding-top: 32px;
@@ -328,7 +322,6 @@
     }
     footer a:hover { text-decoration: underline; }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
       .hero { padding: 40px 0 32px; }
       .grid { grid-template-columns: 1fr; }
@@ -337,7 +330,6 @@
       .workflow-steps { gap: 6px; }
     }
 
-    /* ── DOT COLORS ── */
     .dot.setup    { background: #3fb950; }
     .dot.branch   { background: #a371f7; }
     .dot.stage    { background: #58a6ff; }
@@ -356,7 +348,6 @@
 
 <div class="page">
 
-  <!-- HERO -->
   <header class="hero">
     <div class="hero-eyebrow">git --version 2.x · industry standard</div>
     <h1>GitHub<br><span>Cheatsheet</span></h1>
@@ -371,7 +362,6 @@
     </div>
   </header>
 
-  <!-- WORKFLOW -->
   <div class="workflow">
     <div class="workflow-label">Industry Git Workflow</div>
     <div class="workflow-steps">
@@ -394,7 +384,6 @@
     </div>
   </div>
 
-  <!-- CARDS -->
   <div class="section-title">Commands reference</div>
   <div class="grid">
 
@@ -560,7 +549,6 @@
 
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <p>Click any command to copy &nbsp;·&nbsp; Built for developers</p>
     <p>github.com &nbsp;·&nbsp; <a href="https://git-scm.com/docs" target="_blank">git-scm.com/docs</a></p>
@@ -568,7 +556,6 @@
 
 </div>
 
-<!-- TOAST -->
 <div id="toast">Copied!</div>
 
 <script>
